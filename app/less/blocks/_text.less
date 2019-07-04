@@ -1,0 +1,45 @@
+.text {
+    h2 {
+        font-size: 270%;
+        line-height: 1.1;
+
+        @media(min-width: 768px) {
+            font-size: 400%;
+        }
+    }
+
+    img {
+        display: inline-block;
+        padding: 20px;
+        margin: 10px 0 20px;
+        border-left: 2px solid white;
+    }
+
+    &_align_center {
+        text-align: center;
+    }
+
+    &_align_left-center {
+        text-align: left;
+
+        @media(min-width: 768px) {
+            text-align: center;
+        }
+    }
+
+    &_align_right-left {
+        text-align: right;
+
+        @media(min-width: 768px) {
+            text-align: left;
+        }
+    }
+
+    &_color_light {
+        color: @color-light;
+    }
+
+    &_color_dark {
+        color: @color-dark;
+    }
+}

@@ -1,0 +1,126 @@
+// Author: Karasik Vadim
+// Project: Mecool
+
+
+//Extra small devices Phones (<768px)	
+//Small devices Tablets (≥768px)	
+//Medium devices Desktops (≥992px)	
+//Large devices Desktops (≥1200px)
+
+// Common styles
+@import "common/_reset.less";
+@import "common/_fonts.less";
+@import "common/_colors.less";
+@import "common/_common.less";
+
+// Block styles
+@import "blocks/_header.less";
+@import "blocks/_banner.less";
+@import "blocks/_slider.less";
+@import "blocks/_footer.less";
+@import "blocks/_shop.less";
+@import "blocks/_button.less";
+@import "blocks/_specification.less";
+@import "blocks/_advantages.less";
+@import "blocks/_text.less";
+
+
+// Change Bootstrap Layout
+.clear-padding {
+    padding: 0 !important;
+}
+
+.row {
+    &_advantages {
+        padding: 80px 0;
+    }
+
+    &_android {
+        padding: 80px 0;
+        background: #ececec;
+    }
+
+    &_4kresolution {
+        padding: 80px 0;
+    }
+
+    &_amlogic {
+        padding: 100px 0;
+        background: url('../img/bg_amlogic.jpg') no-repeat top center;
+        background-size: cover;
+
+        .text {
+            margin-bottom: 80px;
+        }
+    }
+
+    &_android-remote {
+        padding: 80px 0;
+        background: #ececec;
+    }
+
+    &_shops {
+        margin: 50px 0;
+    }
+}
+
+.fixed {
+    //
+    background: #fff;
+
+    @media(min-width: 768px) {
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+    }
+}
+
+.shadowed {
+    box-shadow: 0px 0px 4px 0px #8e8e8e
+}
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+
+    &__content {
+        width: 60%;
+        height: 60%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.valign_middle {
+
+    @media(min-width:768px) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+.valign_bottom-middle {
+    position: absolute;
+    bottom: 10%;
+
+    @media(min-width:768px) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+#map {
+    height: 500px;
+    margin: 20px 0;
+}

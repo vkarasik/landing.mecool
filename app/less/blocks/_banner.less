@@ -1,0 +1,71 @@
+.banner {
+    padding: 70px 0;
+    height: 100vh;
+    position: relative;
+
+    &__text {
+        color: @color-light;
+    }
+
+    &__selectors {
+        //display: flex;
+        margin: 40px 0;
+    }
+
+    &__selector {
+        display: block;
+        position: relative;
+        margin: 10px 10px 15px 0;
+        color: @color-light;
+        font-size: 110%;
+
+        @media(min-width: 768px) {
+            display: inline-block;
+        }
+
+        span {
+            vertical-align: middle;
+        }
+
+        &::after {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            content: '';
+            vertical-align: middle;
+            display: none;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        &::before {
+            content: '';
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 10px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+    }
+
+    &__selector_active {
+        &::after {
+            display: inline-block !important;
+        }
+    }
+
+    &_shops {
+        height: 70vh;
+        background: url('../img/bg_enterprise_lg.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    &_m8s {
+        background: url('../img/banner_smart-tv-2_lg.jpg') no-repeat top center;
+        background-size: cover;
+    }
+}
