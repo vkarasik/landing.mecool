@@ -130,6 +130,42 @@ window.addEventListener('DOMContentLoaded', function(){
                 "iconImageSize": [35, 35]
             }
         }],
+        "sila": [{
+            "coordinates": [53.875023, 27.594871],
+            "properties": {
+                "hintContent": "Электросила",
+                "balloonContent": "Минск, пр. Рокоссовского, 2, этаж 2"
+            },
+            "options": {
+                "iconLayout": "default#image",
+                "iconImageHref": "../img/icon_pin.svg",
+                "iconImageSize": [35, 35]
+            }
+        },
+        {
+            "coordinates": [53.964199, 27.535861],
+            "properties": {
+                "hintContent": "Электросила",
+                "balloonContent": "Минск, ТЦ «ALL», Долгиновский тракт, 178, этаж 1"
+            },
+            "options": {
+                "iconLayout": "default#image",
+                "iconImageHref": "../img/icon_pin.svg",
+                "iconImageSize": [35, 35]
+            }
+        },
+        {
+            "coordinates": [53.908835, 27.470176],
+            "properties": {
+                "hintContent": "Электросила",
+                "balloonContent": "Минск, ТЦ «СКАЛА», ул. Петра Глебки, 5, этаж 2"
+            },
+            "options": {
+                "iconLayout": "default#image",
+                "iconImageHref": "../img/icon_pin.svg",
+                "iconImageSize": [35, 35]
+            }
+        }],
         "21vek": [{
             "coordinates": [53.875071, 27.498212],
             "properties": {
