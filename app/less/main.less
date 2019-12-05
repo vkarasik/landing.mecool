@@ -62,6 +62,11 @@
     &_shops {
         margin: 50px 0;
     }
+
+    &_video{
+        padding: 80px 0;
+        background: #ececec;
+    }
 }
 
 .fixed {
@@ -123,4 +128,22 @@
 #map {
     height: 500px;
     margin: 20px 0;
+}
+
+.video-holder {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-holder iframe,
+.video-holder object,
+.video-holder embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
