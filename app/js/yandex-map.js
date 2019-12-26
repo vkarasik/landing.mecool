@@ -443,6 +443,18 @@ window.addEventListener('DOMContentLoaded', function () {
                 "iconImageHref": "../img/icon_pin.svg",
                 "iconImageSize": [35, 35]
             }
-        }]
+        }],
+        "24shop": [{
+            "coordinates": [53.862500, 27.686389],
+            "properties": {
+                "hintContent": "24shop.by (точка самовывоза)",
+                "balloonContent": "Минск, Новодворский сельсовет, 40/1 (пересечение МКАД и Партизанского пр-та)"
+            },
+            "options": {
+                "iconLayout": "default#image",
+                "iconImageHref": "../img/icon_pin.svg",
+                "iconImageSize": [35, 35]
+            }
+        }],
     }
 })
